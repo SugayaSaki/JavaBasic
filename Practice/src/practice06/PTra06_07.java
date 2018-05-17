@@ -24,6 +24,51 @@ public class PTra06_07 {
 		 * ■■□□□
 		 * ■□□□□
 		 */
+		for (int i = 0; i < 5; i++) {
+			for (int l = 0; l < i; l++) {
+				System.out.print("◼");
+			}
+			for (int l = 5; l > i; l--) {
+				System.out.print("◻");
+			}
+			System.out.println();
+		}
 
+		for (int i = 0; i < 5; i++) {
+
+			for (int l = 5; l > i; l--) {
+				System.out.print("◼");
+			}
+
+			for (int l = 0; l < i; l++) {
+				System.out.print("◻");
+			}
+
+			System.out.println();
+		}
+
+
+
+//		for(int i=0; i<1; i++) {
+//			System.out.println("◻◻◻◻◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◻◻◻◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◼◻◻◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◼◼◻◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◼◼◼◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◼◼◼◼");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◼◼◼◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◼◼◻◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◼◻◻◻");
+//		//}for(int i=0; i<1; i++) {
+//			System.out.println("◼◻◻◻◻");
+//		}
 	}
 }

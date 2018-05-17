@@ -25,11 +25,21 @@ public class PTra04_05 {
 			// コマンドプロンプトで入力した文字列が変数lineに代入されます
 			String line = scanner.nextLine();
 
+
 			// 文字列を数字に変換して、変数numに代入します
 			// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになり、プログラムが終了します
 			int myHand = Integer.parseInt(line);
 
+			if(myHand==0){
+				System.out.println("グー");
+			}else if(myHand==1){
+				System.out.println("チョキ");
+			}else{
+				System.out.println("パー");
+			}
+
 			System.out.print("相手の手は・・・・・");
+
 
 			// 下記の命令を実行すると変数cpuHandに、0以上、変数3未満の数字がランダムで代入されます
 			int cpuHand = new java.util.Random().nextInt(3);
@@ -44,23 +54,42 @@ public class PTra04_05 {
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
-			if (cpuHand == 0) {
-				System.out.println("グー！");
+			System.out.println(cpuHand);
 
+			if(cpuHand==0){
+				System.out.println("グー");
+				if(myHand == 2) {
+					winFlg=true;
+				}
 
+			}else if(cpuHand==1){
+				System.out.println("チョキ");
+				if(myHand == 0) {
+					winFlg=true;
+				}
 
-			} else if (cpuHand == 1) {
-				System.out.println("チョキ！！");
-
-
-
-			} else {
-				System.out.println("パー！！");
-
-
+			}else{
+				System.out.println("パー");
+				if(myHand == 1) {
+					winFlg=true;
+				}
 
 			}
 
+//			if(((myHand==0)&&(cpuHand==1))||((myHand==1)&&(cpuHand==2))||((myHand==2)&&(cpuHand==0))){
+//				winFlg=true;
+//			}
+
+
+			/*if(myHand==cpuHand){
+				System.out.println(myHand);
+			}else if((myHand==0)&&(cpuHand==2)){
+				System.out.println("グー");
+			}else if((myHand==1)&&(cpuHand==0)){
+				System.out.println("チョキ");
+			}else if((myHand==2)&&(cpuHand==1)){
+				System.out.println("パー");
+			}*/
 		}
 	}
 }

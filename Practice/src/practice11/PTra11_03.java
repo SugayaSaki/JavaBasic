@@ -12,20 +12,29 @@ public class PTra11_03 {
 	 * ★ PTra11_03クラスに、クラスフィールドでint型のnumberを定義してください
 	 */
 
+		int number;
+
 	/*
 	 * ★ PTra11_03クラスのコンストラクタを引数なしで定義してください
 	 * ★ 処理は、クラスフィールドnumberに1を加算してください
 	 */
 
+	PTra11_03(){
+		this.number = (number+1); //コンストラクタ
+	}
+
+
 	public static void main(String[] args) {
 
-		// ★ sumメソッドを呼び出してください
+		PTra11_03 i =new PTra11_03(); //コンストラクタの為、ここで実行された
+		i.sum(1,2);  //staticがないので自分でインスタンスを作らないといけない
 
+		// ★ sumメソッドを呼び出してください
 	}
 
 	public void sum(int x, int y) {
 		System.out.println("sumメソッドを呼び出しました。" + x + "＋" + y + "＝" + (x + y));
 
-		System.out.println("クラスフィールドnumber：" /* + ★ クラスフィールドnumberの出力をしてください */);
+		System.out.println("クラスフィールドnumber："+number /* + ★ クラスフィールドnumberの出力をしてください */);
 	}
 }

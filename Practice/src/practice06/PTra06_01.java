@@ -10,11 +10,15 @@ public class PTra06_01 {
 	public static void main(String[] args) {
 
 		// ★ 変数iが10未満である限り繰り返しを行う条件式を記述してください
-		for (int i = 0; ; i++) {
-
+		int i=0;
+		while(i<10) {
+		for (i=0; i<10; i++) {
+			//if(i<10) {
+			//	break;}
 			// ★ 変数iを2乗した値を出力してください
-
-
+			System.out.println(i*i);
+			break;
+			}
 		}
 	}
 }
